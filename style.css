@@ -9,11 +9,6 @@ h1 {
     color: white;
     margin: 0;
 }
-p{
-    color: white;
-    margin: 0;
-}
-
 header {
     background-image: url(../img/header-background.png);
     background-size: cover;
