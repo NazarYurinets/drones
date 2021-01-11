@@ -12,7 +12,7 @@ header {
     min-height: 700px;
 }
 
-.logo, img {
+.logo {
     display: inline-block;
     width: 122px;
     height: auto;
