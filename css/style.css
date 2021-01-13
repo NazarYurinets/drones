@@ -1,0 +1,130 @@
+  body {
+            background-color: black;
+        }
+        
+        p {
+            color: white;
+            font-family: "Lato", sans-serif;
+        }
+        
+        body,
+        h1 h2 {
+            color: white;
+            font-family: "fjalla one", sans-serif;
+        }
+        
+        h1 {
+            font-size: 140px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        nav {
+            display: flex;
+            padding-top: 40px;
+        }
+        
+        header {
+            background-image: url(../img/header-background.png);
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto;
+            width: 100%;
+            min-height: 700px;
+        }
+        
+        img {
+            display: inline-block;
+            width: 122px;
+            height: auto;
+        }
+        
+        .border img {
+            width: 100%;
+        }
+        
+        .border h1 {
+            margin-bottom: 0;
+        }
+        
+        @media (min-width: 768px) {
+            .menu {
+                display: flex;
+                flex-basis: auto;
+                flex-grow: 1;
+                align-items: center;
+            }
+            .menu ul {
+                display: flex;
+                list-style: none;
+                flex-direction: row;
+                margin-left: auto;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            .border img {
+                width: 50%;
+            }
+        }
+        
+        .menu ul li a {
+            font-weight: 700;
+            padding: 10px 12px;
+            font-family: "Lato", sans-serif;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .menu ul li a:hover {
+            color: #0ad19d;
+            z-index: 2;
+        }
+        
+        .border {
+            font-weight: bold;
+            font-size: 56px;
+            text-align: left;
+            color: #FFFFFF;
+            margin-bottom: 25px;
+        }
+        
+        .border_page {
+            line-height: 120%;
+            font-size: 16px;
+        }
+        
+        .button_rent {
+            margin: 0 auto;
+            display: inline-block;
+            padding: 24px 31px;
+            background-color: #f52e62;
+            color: #fff;
+            font-family: "Lato", sans-serif;
+            text-decoration: none;
+        }
+        
+        .button_learn {
+            margin: 0 auto;
+            display: inline-block;
+            padding: 24px 31px;
+            border: solid 1px;
+            background-color: #292a2b;
+            color: #fff;
+            font-family: "Lato", sans-serif;
+            text-decoration: none;
+        }
+        
+        .button_rent:hover {
+            background-color: #0ad19d;
+            z-index: 2;
+        }
+        
+        .button_learn:hover {
+            background-color: #fdfdfd;
+            color: black;
+            z-index: 2;
+        }
