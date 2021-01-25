@@ -26,7 +26,7 @@ function nextButtonClicked() {
     showCurrentImage();
 }
 
-// Завдання - закодити поведінку кнопки Prev
+
 const prevButton = document.querySelector('.carousel .prev');
 prevButton.addEventListener('click', prevButtonClicked);
 
