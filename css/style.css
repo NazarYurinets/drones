@@ -1,130 +1,317 @@
-  body {
-            background-color: black;
-        }
-        
-        p {
-            color: white;
-            font-family: "Lato", sans-serif;
-        }
-        
-        body,
-        h1 h2 {
-            color: white;
-            font-family: "fjalla one", sans-serif;
-        }
-        
-        h1 {
-            font-size: 140px;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        nav {
-            display: flex;
-            padding-top: 40px;
-        }
-        
-        header {
-            background-image: url(../img/header-background.png);
-            background-size: cover;
-            background-position: center;
-            margin: 0 auto;
-            width: 100%;
-            min-height: 700px;
-        }
-        
-        img {
-            display: inline-block;
-            width: 122px;
-            height: auto;
-        }
-        
-        .border img {
-            width: 100%;
-        }
-        
-        .border h1 {
-            margin-bottom: 0;
-        }
-        
-        @media (min-width: 768px) {
-            .menu {
-                display: flex;
-                flex-basis: auto;
-                flex-grow: 1;
-                align-items: center;
-            }
-            .menu ul {
-                display: flex;
-                list-style: none;
-                flex-direction: row;
-                margin-left: auto;
-                margin-top: 0;
-                margin-bottom: 0;
-            }
-            .border img {
-                width: 50%;
-            }
-        }
-        
-        .menu ul li a {
-            font-weight: 700;
-            padding: 10px 12px;
-            font-family: "Lato", sans-serif;
-            color: white;
-            text-decoration: none;
-        }
-        
-        .menu ul li a:hover {
-            color: #0ad19d;
-            z-index: 2;
-        }
-        
-        .border {
-            font-weight: bold;
-            font-size: 56px;
-            text-align: left;
-            color: #FFFFFF;
-            margin-bottom: 25px;
-        }
-        
-        .border_page {
-            line-height: 120%;
-            font-size: 16px;
-        }
-        
-        .button_rent {
-            margin: 0 auto;
-            display: inline-block;
-            padding: 24px 31px;
-            background-color: #f52e62;
-            color: #fff;
-            font-family: "Lato", sans-serif;
-            text-decoration: none;
-        }
-        
-        .button_learn {
-            margin: 0 auto;
-            display: inline-block;
-            padding: 24px 31px;
-            border: solid 1px;
-            background-color: #292a2b;
-            color: #fff;
-            font-family: "Lato", sans-serif;
-            text-decoration: none;
-        }
-        
-        .button_rent:hover {
-            background-color: #0ad19d;
-            z-index: 2;
-        }
-        
-        .button_learn:hover {
-            background-color: #fdfdfd;
-            color: black;
-            z-index: 2;
-        }
+body {
+    background-color: black;
+}
+
+p {
+    color: white;
+    font-family: "Lato", sans-serif;
+}
+
+body,
+h1 h2 {
+    color: white;
+    font-family: "fjalla one", serif;
+}
+
+h1 {
+    font-size: 64px;
+    width: 120px;
+    letter-spacing: .067em;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    display: flex;
+    padding-top: 18px;
+}
+
+header {
+    background-image: url(../img/header-background.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 700px;
+    min-width: 320px;
+    padding-bottom: 30px;
+    max-width: 980%;
+    margin: auto;
+}
+
+img {
+    display: inline-block;
+    width: 122px;
+    height: auto;
+}
+
+.border img {
+    width: 100%;
+}
+
+.border h1 {
+    margin-bottom: 0;
+    width: 120px;
+}
+
+@media (min-width: 768px) {
+    .menu {
+        display: flex;
+        flex-basis: auto;
+        flex-grow: 1;
+        align-items: center;
+    }
+    .menu ul {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        margin-left: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .border img {
+        width: 50%;
+    }
+    .border h1 {
+        font-size: 130px;
+    }
+}
+
+.menu ul li a {
+    font-weight: 700;
+    padding: 10px 12px;
+    font-family: "Lato", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    color: #0ad19d;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.border {
+    font-weight: bold;
+    font-size: 56px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.border_page {
+    line-height: 120%;
+    font-size: 16px;
+}
+
+.button_rent {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 24px 31px;
+    background-color: #f52e62;
+    border: solid 1px #0a0909;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+}
+
+.button_learn {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 24px 31px;
+    border: solid 1px;
+    background-color: #292a2b;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+}
+
+.button_rent:hover {
+    background-color: #0ad19d;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.button_learn:hover {
+    background-color: #fdfdfd;
+    color: black;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.second-container-wrap {
+    background: url(../img/backg.png) 50% 50% / cover no-repeat fixed;
+}
+
+.second-container {
+    margin: 0 auto;
+    min-height: 700px;
+    min-width: 320px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.banner {
+    width: 560px;
+    height: 520px;
+    margin-right: 80px;
+}
+
+.about-company {
+    margin-bottom: 25px;
+    line-height: 160%;
+}
+
+.about-company img {
+    width: 100%;
+}
+
+.about-company h2 {
+    margin-top: 0;
+    font-size: 40px;
+    font-stretch: 100%;
+    line-height: 160%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.collection {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.paragraf-one {
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.paragraf-two {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(197, 197, 197);
+}
+
+.number p {
+    color: #0ad19d;
+    font-size: 25px;
+}
+
+.text p {
+    font-family: "fjalla one", serif;
+    font-size: 25px;
+}
+
+.basic-container {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    min-height: 460px;
+    padding-top: 100px;
+}
+
+.intro-icon {
+    display: flex;
+    justify-content: space-around;
+}
+
+.one-icon {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.one-icon p {
+    font-size: 16px;
+    color: #515151;
+    line-height: 200%;
+}
+
+.one-icon h3 {
+    color: #000000;
+}
+
+.icon-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.line {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.head-drone {
+    background-color: #f0f0f0;
+}
+
+.main-drone {
+    min-width: 320px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: -20px;
+}
+
+.drones-for {
+    padding-top: 90px;
+    line-height: 200%;
+    padding-right: 100px;
+}
+
+.drones-for img {
+    width: 100%;
+}
+
+.drones-for h2 {
+    margin-top: 0;
+    font-size: 40px;
+    font-stretch: 100%;
+    color: #1c1d1e;
+    display: flex;
+    flex-wrap: wrap;
+    letter-spacing: 5px;
+}
+
+.p-one {
+    color: #1c1d1e;
+    font-size: 18px;
+}
+
+.p-two {
+    color: #515151;
+    font-size: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.button-choose {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 24px 31px;
+    background-color: #f52e62;
+    border: solid 1px #f0f0f0;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+}
+
+.button-choose:hover {
+    background-color: #0ad19d;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.bg-photo img {
+    width: 745px;
+    height: auto;
+    margin-right: -153px;
+}
