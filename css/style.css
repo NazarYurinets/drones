@@ -315,3 +315,8 @@ img {
     height: auto;
     margin-right: -153px;
 }
+.current-image {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
