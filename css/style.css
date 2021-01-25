@@ -315,7 +315,7 @@ img {
     height: auto;
     margin-right: -153px;
 }
-.current-image imgse {
+.current-image img {
     width: 500px;
     height: 500px;
     object-fit: cover;
