@@ -1,37 +1,34 @@
-const images = [
-    'pictures1.png',
-    'pictures2.jpeg',
-    'pictures3.jpeg',
-    'pictures4.png',
-    'pictures5.png'
-];
+for (const carousel of document.querySelectorAll('.carousel')) {
+    const container = carousel.querySelector('.current')
+    const blocks = carousel.querySelectorAll('.carousel-block');
 
+    let currImgIdx = 0;
 
+    function showCurrentImage() {
+        const block = blocks[currImgIdx];
+        console.log(currImgIdx);
 
-let currImgIdx = 0;
+        container.scrollLeft = block.offsetLeft;
 
-function showCurrentImage() {
-    const imgContainer = document.querySelector('.carousel .current-image');
-    imgContainer.src = 'img/' + images[currImgIdx];
-}
+    }
 
-showCurrentImage();
-
-const nextButton = document.querySelector('.carousel .next');
-nextButton.addEventListener('click', nextButtonClicked);
-
-function nextButtonClicked() {
-    currImgIdx++;
-    if (currImgIdx >= images.length) currImgIdx = 0;
     showCurrentImage();
-}
 
+    const nextButton = carousel.querySelector('.carousel .next');
+    nextButton.addEventListener('click', nextButtonClicked);
 
-const prevButton = document.querySelector('.carousel .prev');
-prevButton.addEventListener('click', prevButtonClicked);
+    function nextButtonClicked() {
+        currImgIdx += 2;
+        if (currImgIdx >= blocks.length) currImgIdx = 0;
+        showCurrentImage();
+    }
 
-function prevButtonClicked() {
-    currImgIdx--;
-    if (currImgIdx < 0) currImgIdx = images.length - 1;
-    showCurrentImage();
+    const prevButton = carousel.querySelector('.carousel .prev');
+    prevButton.addEventListener('click', prevButtonClicked);
+
+    function prevButtonClicked() {
+        currImgIdx -= 2;
+        if (currImgIdx < 0) currImgIdx = blocks.length - 1;
+        showCurrentImage();
+    }
 }

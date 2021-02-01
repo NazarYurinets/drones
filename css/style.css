@@ -1,9 +1,16 @@
 body {
     background-color: black;
+    margin: 0;
+    padding: 0;
 }
 
 p {
     color: white;
+    font-family: "Lato", sans-serif;
+}
+
+b {
+    color: #0ad19d;
     font-family: "Lato", sans-serif;
 }
 
@@ -20,6 +27,8 @@ h1 {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -43,7 +52,7 @@ header {
     margin: auto;
 }
 
-img {
+#logo img {
     display: inline-block;
     width: 122px;
     height: auto;
@@ -56,29 +65,6 @@ img {
 .border h1 {
     margin-bottom: 0;
     width: 120px;
-}
-
-@media (min-width: 768px) {
-    .menu {
-        display: flex;
-        flex-basis: auto;
-        flex-grow: 1;
-        align-items: center;
-    }
-    .menu ul {
-        display: flex;
-        list-style: none;
-        flex-direction: row;
-        margin-left: auto;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    .border img {
-        width: 50%;
-    }
-    .border h1 {
-        font-size: 130px;
-    }
 }
 
 .menu ul li a {
@@ -101,6 +87,9 @@ img {
     text-align: left;
     color: #FFFFFF;
     margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
 }
 
 .border_page {
@@ -124,7 +113,8 @@ img {
     display: inline-block;
     padding: 24px 31px;
     border: solid 1px;
-    background-color: #292a2b;
+    border-color: #cac3c3;
+    background-color: #0d0d0e;
     color: #fff;
     font-family: "Lato", sans-serif;
     text-decoration: none;
@@ -152,13 +142,13 @@ img {
     min-height: 700px;
     min-width: 320px;
     padding-bottom: 30px;
-    display: flex;
     justify-content: center;
     padding-top: 100px;
 }
 
 .banner {
     width: 560px;
+    max-width: 100%;
     height: 520px;
     margin-right: 80px;
 }
@@ -226,6 +216,7 @@ img {
 .one-icon {
     margin-left: 20px;
     margin-right: 20px;
+    width: 300px;
 }
 
 .one-icon p {
@@ -244,6 +235,10 @@ img {
     align-items: center;
 }
 
+.icon {
+    width: 50%;
+}
+
 .line {
     width: 100%;
     margin-top: 20px;
@@ -257,6 +252,7 @@ img {
 .main-drone {
     min-width: 320px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding-bottom: -20px;
 }
@@ -311,14 +307,219 @@ img {
 }
 
 .bg-photo img {
-    width: 745px;
-    height: auto;
+    width: 750px;
+    max-width: 100%;
     margin-right: -153px;
+    margin-bottom: -4px;
 }
-.current-image img {
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-    align-items: center;
 
+.carousel-bg-one {
+    background: url(../img/backg.png) 50% 50% / cover no-repeat fixed;
+    padding-top: 90px;
+}
+
+.our_drones {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.carousel-bg {
+    background: #FFFFFF;
+    background-size: cover;
+    background-position: center;
+    min-height: 460px;
+    padding-top: 60px;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px;
+}
+
+.current {
+    display: flex;
+    justify-content: space-between;
+    scroll-snap-type: x mandatory;
+    overflow: hidden;
+}
+
+.carousel-block {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 49%;
+    margin: 0 1%;
+    overflow: hidden;
+}
+
+.carousel-block img {
+    max-width: 100%;
+}
+
+.next,
+.prev {
+    margin: 0 10px;
+    display: inline-block;
+    padding: 9px 11px;
+    border-radius: 50px;
+    border: solid 0px;
+    background-color: #0ad19d;
+    cursor: pointer;
+}
+
+.bottom-bg {
+    background-image: url(../img/reg.bg.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+}
+
+.bottom {
+    display: flex;
+    min-width: 320px;
+    justify-content: space-between;
+    padding-bottom: 120px;
+}
+
+#contacts {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.line-bottom {
+    width: 100%;
+}
+
+.colect-add {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.contacts {
+    line-height: 2.2;
+}
+
+.address p {
+    font-size: 21px;
+    line-height: 2.2;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+}
+
+.location p {
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+}
+
+form {
+    padding: 100px 100px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: rgba(28, 29, 30, 0.82);
+    box-sizing: border-box;
+}
+
+.form-input {
+    background-color: rgba(28, 29, 30, 0.41);
+    padding: 19px 21px;
+    width: 100%;
+    color: #FFFFFF;
+    margin: 20px 20px;
+}
+
+form-label {
+    padding: 20px 20px;
+}
+
+.collapse .collapse-body {
+    display: none;
+}
+
+.collapse .collapse-title span:after {
+    content: '+';
+}
+
+.collapse.is-active .collapse-body {
+    display: initial;
+}
+
+.collapse.is-active .collapse-title span:after {
+    content: '-';
+}
+
+.collapse-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collapse-title span {
+    font-size: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #1c1d1e;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer_logo img {
+    display: inline-block;
+    width: 122px;
+    height: auto;
+}
+
+dd {
+    margin: 0;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+
+@media (min-width: 768px) {
+    .menu {
+        display: flex;
+        flex-basis: auto;
+        flex-grow: 1;
+        align-items: center;
+    }
+    .menu ul {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        margin-left: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .border img {
+        width: 50%;
+    }
+    .border h1 {
+        font-size: 130px;
+    }
+    .container {
+        flex-direction: row;
+    }
+    .drones-for {
+        max-width: 50%;
+    }
+    dl {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    dt,
+    dd {
+        width: 50%;
+    }
 }
