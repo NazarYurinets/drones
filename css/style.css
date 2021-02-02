@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: black;
     margin: 0;
@@ -259,8 +263,9 @@ header {
 
 .drones-for {
     padding-top: 90px;
+    padding-bottom: 90px;
     line-height: 200%;
-    padding-right: 100px;
+    margin-right: 0;
 }
 
 .drones-for img {
@@ -327,7 +332,7 @@ header {
     background: #FFFFFF;
     background-size: cover;
     background-position: center;
-    min-height: 460px;
+    min-height: 200px;
     padding-top: 60px;
 }
 
@@ -391,7 +396,7 @@ header {
 }
 
 .line-bottom {
-    width: 100%;
+    width: 50%;
 }
 
 .colect-add {
@@ -414,7 +419,7 @@ header {
 
 .location p {
     font-size: 16px;
-    line-height: 1.8;
+    line-height: 1.7;
     font-family: Lato, sans-serif;
     font-weight: 400;
 }
@@ -522,4 +527,40 @@ dd {
     dd {
         width: 50%;
     }
+}
+
+.whiteline::before {
+    content: "";
+    display: inline-block;
+    width: 85.5px;
+    height: 3px;
+    background: white;
+    margin: 0 auto;
+}
+
+.footer-whiteline::before {
+    content: "";
+    display: inline-block;
+    width: 1200px;
+    min-width: 360px;
+    height: 0.1px;
+    background: white;
+}
+
+.footer-line {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    min-width: 360px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.copyrights {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    min-width: 360px;
+    margin: 0 auto;
 }
